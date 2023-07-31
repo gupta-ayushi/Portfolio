@@ -1,0 +1,332 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*navigation Bar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    background-color: #061411;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(./homebackgroundimage.jpg) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left:30%;
+}
+.headings{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    text-align: left;
+    margin: 20px 0px;
+
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:#061411;
+    color:white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+}
+.des{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+.des .quote{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    text-align: right;
+    
+}
+
+/*About Section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: #045952;
+}
+#pic{
+    display: flex;
+    padding-top: 5%;
+}
+#pic img{
+    width:575px;
+    height: 400px;
+    padding: 15px;
+}
+#pic h2{
+    color:aliceblue;
+}
+#pic h1{
+    color:aliceblue;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#intro p{
+    margin: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:azure;
+}
+
+/*Portfolio Section*/
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: #114143;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.gallery img{
+    width:360px;
+    height: 240px;
+    padding: 2%;
+    position: static;
+}
+.gallery figcaption{
+    text-align: center;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #073024;
+}
+#skills .mainheadings{
+    color: whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,peachpuff 50%, antiquewhite 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: black;
+    border: none;
+    box-shadow: 0 0 20 whitesmoke;
+}
+
+.box .headings{
+    align-self: flex-start;
+}
+.box p{
+    text-align: justify;
+    padding: 5px;
+}
+
+#edu{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #116e69;
+}
+#edu .head{
+    color: whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0px;
+    padding-bottom: 5%;
+}
+.degree{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 120px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,lightcoral 50%, pink 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+
+}
+.part:hover{
+    background-position: left bottom;
+    color: black;
+    border: none;
+    box-shadow: 0 0 20 whitesmoke;
+}
+
+.part p{
+    text-align: justify;
+    padding: 5px;
+}
+.part .sub{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #114143;
+
+}
+.topic {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    padding-bottom: 5%;
+}
+.list {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    text-align: justify;
+    background: linear-gradient(to top,beige 50%, bisque 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    
+}
+.list:hover{
+    background-position: left bottom;
+    color: black;
+    border: none;
+    box-shadow: 0 0 20 whitesmoke;
+}
+.list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list li {
+    margin-bottom: 8px;
+    color: black;
+    padding: 2%;
+}
+.footer {
+    background-color:#061411;
+    padding: 5px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.contact-details {
+    font-size: 14px;
+}
+.contact-details span {
+    margin-right: 10px;
+    color: antiquewhite;
+}
